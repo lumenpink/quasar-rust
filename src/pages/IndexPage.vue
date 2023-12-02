@@ -1,5 +1,6 @@
 <template>
   <q-page class="row items-center justify-evenly">
+<button @click="greet('ssss')">grrrr</button>
     <example-component
       title="Example component"
       active
@@ -13,6 +14,7 @@
 import { Todo, Meta } from 'components/models'
 import ExampleComponent from 'components/ExampleComponent.vue'
 import { ref } from 'vue'
+import { greet } from 'rust'
 
 const todos = ref<Todo[]>([
   {
